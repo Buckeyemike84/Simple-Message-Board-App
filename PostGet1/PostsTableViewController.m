@@ -14,7 +14,7 @@
 
 -(id) initWithCoder:(NSCoder *)aDecoder	{
 	if (self = [super initWithCoder:aDecoder]){
-		_posts = [[NSArray alloc] init];
+		_posts = [[NSMutableArray alloc] init];
 	}
 	return self;
 }
@@ -31,7 +31,7 @@
 }
 
 - (void) refreshRequested: (id)sender {
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"Refresh Requested" object:nil];
+	[self.postsViewDelegate refreshWasRequested];
 }
 
 - (void) didFinishLoading {
@@ -46,8 +46,7 @@
     return self.posts.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"PostCell";
     ViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 	
@@ -58,27 +57,20 @@
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+		
+        NSDictionary *deletedPost = self.posts[indexPath.row];
+		
+		[self.posts removeObjectAtIndex:indexPath.row];
+		[self.postsViewDelegate deletePost:deletedPost];
+		
+		[tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
-*/
 
 @end

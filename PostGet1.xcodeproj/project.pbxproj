@@ -23,12 +23,22 @@
 		4D76162617C5C477006B875F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D76162517C5C477006B875F /* Icon@2x.png */; };
 		4D76162817C5C47A006B875F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D76162717C5C47A006B875F /* Icon-72.png */; };
 		4D76162A17C5C47C006B875F /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D76162917C5C47C006B875F /* Icon-72@2x.png */; };
+		4D82DE3917C71BB20070948D /* createtable.php in Resources */ = {isa = PBXBuildFile; fileRef = 4D82DE3217C71BB20070948D /* createtable.php */; };
+		4D82DE3A17C71BB20070948D /* delete.php in Resources */ = {isa = PBXBuildFile; fileRef = 4D82DE3317C71BB20070948D /* delete.php */; };
+		4D82DE3B17C71BB20070948D /* get.php in Resources */ = {isa = PBXBuildFile; fileRef = 4D82DE3417C71BB20070948D /* get.php */; };
+		4D82DE3C17C71BB20070948D /* index.php in Resources */ = {isa = PBXBuildFile; fileRef = 4D82DE3517C71BB20070948D /* index.php */; };
+		4D82DE3D17C71BB20070948D /* pgconfig-template.php in Resources */ = {isa = PBXBuildFile; fileRef = 4D82DE3617C71BB20070948D /* pgconfig-template.php */; };
+		4D82DE3E17C71BB20070948D /* pgconfig.php in Resources */ = {isa = PBXBuildFile; fileRef = 4D82DE3717C71BB20070948D /* pgconfig.php */; };
+		4D82DE3F17C71BB20070948D /* post.php in Resources */ = {isa = PBXBuildFile; fileRef = 4D82DE3817C71BB20070948D /* post.php */; };
+		4D82DE4217C726360070948D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D82DE4117C726360070948D /* SettingsViewController.m */; };
+		4D82DE4517C728230070948D /* SettingsGear-30h.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D82DE4317C728230070948D /* SettingsGear-30h.png */; };
+		4D82DE4617C728230070948D /* SettingsGear-30h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D82DE4417C728230070948D /* SettingsGear-30h@2x.png */; };
 		4D907A9217C6EB3500849257 /* ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D907A9117C6EB3500849257 /* ViewCell.m */; };
 		4D907A9517C6EBAF00849257 /* PostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D907A9417C6EBAF00849257 /* PostsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D151E4217C5883E008369C7 /* PostGet1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostGet1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D151E4217C5883E008369C7 /* PostGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D151E4517C5883E008369C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4D151E4717C5883E008369C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4D151E4917C5883E008369C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,6 +59,17 @@
 		4D76162517C5C477006B875F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "PostGet1/Graphics/Icon@2x.png"; sourceTree = "<group>"; };
 		4D76162717C5C47A006B875F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "PostGet1/Graphics/Icon-72.png"; sourceTree = "<group>"; };
 		4D76162917C5C47C006B875F /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "PostGet1/Graphics/Icon-72@2x.png"; sourceTree = "<group>"; };
+		4D82DE3217C71BB20070948D /* createtable.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = createtable.php; sourceTree = "<group>"; };
+		4D82DE3317C71BB20070948D /* delete.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = delete.php; sourceTree = "<group>"; };
+		4D82DE3417C71BB20070948D /* get.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = get.php; sourceTree = "<group>"; };
+		4D82DE3517C71BB20070948D /* index.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		4D82DE3617C71BB20070948D /* pgconfig-template.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = "pgconfig-template.php"; sourceTree = "<group>"; };
+		4D82DE3717C71BB20070948D /* pgconfig.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = pgconfig.php; sourceTree = "<group>"; };
+		4D82DE3817C71BB20070948D /* post.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = post.php; sourceTree = "<group>"; };
+		4D82DE4017C726360070948D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		4D82DE4117C726360070948D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		4D82DE4317C728230070948D /* SettingsGear-30h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SettingsGear-30h.png"; path = "PostGet1/Graphics/SettingsGear-30h.png"; sourceTree = "<group>"; };
+		4D82DE4417C728230070948D /* SettingsGear-30h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SettingsGear-30h@2x.png"; path = "PostGet1/Graphics/SettingsGear-30h@2x.png"; sourceTree = "<group>"; };
 		4D907A9017C6EB3500849257 /* ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCell.h; sourceTree = "<group>"; };
 		4D907A9117C6EB3500849257 /* ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCell.m; sourceTree = "<group>"; };
 		4D907A9317C6EBAE00849257 /* PostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsTableViewController.h; sourceTree = "<group>"; };
@@ -76,13 +97,14 @@
 				4D151E4B17C5883E008369C7 /* PostGet1 */,
 				4D151E4417C5883E008369C7 /* Frameworks */,
 				4D151E4317C5883E008369C7 /* Products */,
+				4D82DE3117C71BB20070948D /* ServerScripts */,
 			);
 			sourceTree = "<group>";
 		};
 		4D151E4317C5883E008369C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D151E4217C5883E008369C7 /* PostGet1.app */,
+				4D151E4217C5883E008369C7 /* PostGet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +130,8 @@
 				4D907A9417C6EBAF00849257 /* PostsTableViewController.m */,
 				4D907A9017C6EB3500849257 /* ViewCell.h */,
 				4D907A9117C6EB3500849257 /* ViewCell.m */,
+				4D82DE4017C726360070948D /* SettingsViewController.h */,
+				4D82DE4117C726360070948D /* SettingsViewController.m */,
 				4D151E4C17C5883E008369C7 /* Supporting Files */,
 				4D76162B17C5C485006B875F /* Graphics */,
 			);
@@ -133,6 +157,8 @@
 		4D76162B17C5C485006B875F /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				4D82DE4317C728230070948D /* SettingsGear-30h.png */,
+				4D82DE4417C728230070948D /* SettingsGear-30h@2x.png */,
 				4D76162917C5C47C006B875F /* Icon-72@2x.png */,
 				4D76162717C5C47A006B875F /* Icon-72.png */,
 				4D76162517C5C477006B875F /* Icon@2x.png */,
@@ -140,6 +166,20 @@
 			);
 			name = Graphics;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		4D82DE3117C71BB20070948D /* ServerScripts */ = {
+			isa = PBXGroup;
+			children = (
+				4D82DE3217C71BB20070948D /* createtable.php */,
+				4D82DE3317C71BB20070948D /* delete.php */,
+				4D82DE3417C71BB20070948D /* get.php */,
+				4D82DE3517C71BB20070948D /* index.php */,
+				4D82DE3617C71BB20070948D /* pgconfig-template.php */,
+				4D82DE3717C71BB20070948D /* pgconfig.php */,
+				4D82DE3817C71BB20070948D /* post.php */,
+			);
+			path = ServerScripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +199,7 @@
 			);
 			name = PostGet1;
 			productName = PostGet1;
-			productReference = 4D151E4217C5883E008369C7 /* PostGet1.app */;
+			productReference = 4D151E4217C5883E008369C7 /* PostGet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -202,6 +242,15 @@
 				4D76162617C5C477006B875F /* Icon@2x.png in Resources */,
 				4D76162817C5C47A006B875F /* Icon-72.png in Resources */,
 				4D76162A17C5C47C006B875F /* Icon-72@2x.png in Resources */,
+				4D82DE3917C71BB20070948D /* createtable.php in Resources */,
+				4D82DE3A17C71BB20070948D /* delete.php in Resources */,
+				4D82DE3B17C71BB20070948D /* get.php in Resources */,
+				4D82DE3C17C71BB20070948D /* index.php in Resources */,
+				4D82DE3D17C71BB20070948D /* pgconfig-template.php in Resources */,
+				4D82DE3E17C71BB20070948D /* pgconfig.php in Resources */,
+				4D82DE3F17C71BB20070948D /* post.php in Resources */,
+				4D82DE4517C728230070948D /* SettingsGear-30h.png in Resources */,
+				4D82DE4617C728230070948D /* SettingsGear-30h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +266,7 @@
 				4D151E6D17C58B2F008369C7 /* MasterViewController.m in Sources */,
 				4D907A9217C6EB3500849257 /* ViewCell.m in Sources */,
 				4D907A9517C6EBAF00849257 /* PostsTableViewController.m in Sources */,
+				4D82DE4217C726360070948D /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +356,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PostGet1/PostGet1-Prefix.pch";
 				INFOPLIST_FILE = "PostGet1/PostGet1-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PostGet;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -317,7 +367,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PostGet1/PostGet1-Prefix.pch";
 				INFOPLIST_FILE = "PostGet1/PostGet1-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PostGet;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

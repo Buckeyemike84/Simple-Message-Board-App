@@ -6,11 +6,16 @@
 //  Copyright (c) 2013 Mark Hambly. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@class PostsTableViewController;
+@protocol PostsViewDelegate <NSObject>
+- (void)refreshWasRequested;
+- (void)deletePost:(NSDictionary *)postToDelete;
+@end
 
 @interface PostsTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *posts;
+@property (nonatomic, weak) id <PostsViewDelegate> postsViewDelegate;
+@property (nonatomic, strong) NSMutableArray *posts;
 
 - (void) didFinishLoading;
 

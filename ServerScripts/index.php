@@ -30,6 +30,7 @@ $result = mysqli_query($con,"SELECT * FROM Posts ORDER BY Time DESC");
 
 echo "<table>
 <tr>
+<th>Name</th>
 <th>Post</th>
 <th>Time</th>
 </tr>";
@@ -37,6 +38,7 @@ echo "<table>
 while($row = mysqli_fetch_array($result))
   {
   echo "<tr>";
+  echo "<td>" . $row['Name'] . "</td>";
   echo "<td>" . $row['PostContent'] . "</td>";
   echo "<td>" . $row['Time'] . "</td>";
   echo "</tr>";

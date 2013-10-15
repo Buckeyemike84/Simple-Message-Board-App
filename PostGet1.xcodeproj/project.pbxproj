@@ -19,6 +19,8 @@
 		4D151E5F17C5883E008369C7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D151E5D17C5883E008369C7 /* MainStoryboard_iPhone.storyboard */; };
 		4D151E6D17C58B2F008369C7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D151E6C17C58B2F008369C7 /* MasterViewController.m */; };
 		4D4004FE180CBF6A007356E3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4D4004FD180CBF6A007356E3 /* README.md */; };
+		4D400501180CDEB8007356E3 /* Screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4004FF180CDEB8007356E3 /* Screenshot01.png */; };
+		4D400502180CDEB8007356E3 /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D400500180CDEB8007356E3 /* Screenshot02.png */; };
 		4D76161E17C5B1CE006B875F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D76161D17C5B1CE006B875F /* QuartzCore.framework */; };
 		4D76162417C5C475006B875F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D76162317C5C475006B875F /* Icon.png */; };
 		4D76162617C5C477006B875F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D76162517C5C477006B875F /* Icon@2x.png */; };
@@ -56,6 +58,8 @@
 		4D151E6B17C58B2F008369C7 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		4D151E6C17C58B2F008369C7 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		4D4004FD180CBF6A007356E3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		4D4004FF180CDEB8007356E3 /* Screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.png; sourceTree = "<group>"; };
+		4D400500180CDEB8007356E3 /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
 		4D76161D17C5B1CE006B875F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4D76162317C5C475006B875F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = PostGet1/Graphics/Icon.png; sourceTree = "<group>"; };
 		4D76162517C5C477006B875F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "PostGet1/Graphics/Icon@2x.png"; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 				4D151E4317C5883E008369C7 /* Products */,
 				4D82DE3117C71BB20070948D /* ServerScripts */,
 				4D4004FD180CBF6A007356E3 /* README.md */,
+				4D4004FF180CDEB8007356E3 /* Screenshot01.png */,
+				4D400500180CDEB8007356E3 /* Screenshot02.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,6 +253,7 @@
 				4D76162A17C5C47C006B875F /* Icon-72@2x.png in Resources */,
 				4D82DE3917C71BB20070948D /* createtable.php in Resources */,
 				4D82DE3A17C71BB20070948D /* delete.php in Resources */,
+				4D400502180CDEB8007356E3 /* Screenshot02.png in Resources */,
 				4D82DE3B17C71BB20070948D /* get.php in Resources */,
 				4D82DE3C17C71BB20070948D /* index.php in Resources */,
 				4D4004FE180CBF6A007356E3 /* README.md in Resources */,
@@ -254,6 +261,7 @@
 				4D82DE3E17C71BB20070948D /* pgconfig.php in Resources */,
 				4D82DE3F17C71BB20070948D /* post.php in Resources */,
 				4D82DE4517C728230070948D /* SettingsGear-30h.png in Resources */,
+				4D400501180CDEB8007356E3 /* Screenshot01.png in Resources */,
 				4D82DE4617C728230070948D /* SettingsGear-30h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

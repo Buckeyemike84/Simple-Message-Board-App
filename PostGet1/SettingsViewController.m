@@ -15,6 +15,13 @@
 
 @implementation SettingsViewController
 
+-(void) viewDidLoad {
+	self.nameField.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"name"];
+}
 
+- (IBAction)saveButtonPressed:(id)sender {
+	[[NSUserDefaults standardUserDefaults] setObject:self.nameField.text forKey:@"name"];
+	[self performSegueWithIdentifier:@"UnwindToMainView" sender:self];
+}
 
 @end

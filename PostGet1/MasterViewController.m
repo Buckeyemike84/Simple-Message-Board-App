@@ -79,10 +79,17 @@ NSString *const POSTGETURL = @"http://fermenticus.com/postget";
 	[request setHTTPMethod:@"POST"];
 	[request setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
 	NSString *textString = self.postField.text;
+	if (![[NSUserDefaults standardUserDefaults] objectForKey:@"name"]){
+		[[NSUserDefaults standardUserDefaults] setObject:@"Anonymous" forKey:@"name"];
+	}
+	NSDictionary *postDict = @{@"name":[[NSUserDefaults standardUserDefaults]objectForKey:@"name"],
+							   @"string":self.postField.text};
 	
 	[request setValue:[NSString stringWithFormat:@"%d",textString.length] forHTTPHeaderField:@"Content-length"];
 	
-	[request setHTTPBody:[textString dataUsingEncoding:NSUTF8StringEncoding]];
+	[request setHTTPBody:[NSJSONSerialization dataWithJSONObject:postDict options:NSJSONWritingPrettyPrinted error:nil]];
+	
+//	[request setHTTPBody:[textString dataUsingEncoding:NSUTF8StringEncoding]];
 
 	_postConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	_postResponse = [[NSMutableString alloc] init];

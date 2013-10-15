@@ -10,6 +10,10 @@
 #import "PostsTableViewController.h"
 #import "ViewCell.h"
 
+@interface PostsTableViewController () <UIAlertViewDelegate>
+
+@end
+
 @implementation PostsTableViewController 
 
 -(id) initWithCoder:(NSCoder *)aDecoder	{
@@ -51,7 +55,8 @@
     ViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 	
 	NSDictionary *post = self.posts[indexPath.row];
-	cell.contentLabel.text = post[@"content"];
+	NSString *postString = [NSString stringWithFormat:@"%@: %@",post[@"name"],post[@"content"]];
+	cell.contentLabel.text = postString;
 	cell.dateLabel.text = post[@"timestamp"];
     
     return cell;
@@ -72,5 +77,16 @@
 		[tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	NSDictionary *post = self.posts[indexPath.row];
+	NSString *alertString = [NSString stringWithFormat:@"%@\n%@",post[@"content"],post[@"timestamp"]];
+	[[[UIAlertView alloc] initWithTitle:post[@"name"] message:alertString delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil] show];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+}
+
 
 @end
